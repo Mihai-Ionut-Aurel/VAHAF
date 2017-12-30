@@ -102,3 +102,6 @@ ENV/
 
 #Data caches
 /Data/itunes_cache
+
+#Pycharm
+.idea
