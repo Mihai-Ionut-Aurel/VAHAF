@@ -10,7 +10,7 @@ def siri_app_itunes(query,pages):
         results.extend(list(search_app(query=query,limit=200,offset=(i*200))))
 
     storeApps= []
-    software = Software()
+    software = Software(1)
     for software in results:
         app = store_app.StoreAppData(software.get_id())
         app.release_date=software.release_date

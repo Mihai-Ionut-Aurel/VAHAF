@@ -1,3 +1,6 @@
+import json
+
+
 class StoreAppData:
     def __init__(self,id):
         self.__id = id
@@ -82,4 +85,10 @@ class StoreAppData:
 
     @supported_devices.setter
     def supported_devices(self, val):
-        self.__languages = val
+        self.__supported_devices = val
+
+    def __repr__(self):
+        return str(self.__dict__)
+
+    def __str__(self):
+        return str(self.__dict__)

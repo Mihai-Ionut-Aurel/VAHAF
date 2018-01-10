@@ -589,7 +589,7 @@ class Software(Track):
         self.languages = json.get('languageCodesISO2A', None)
 
     def _set_supported_devices(self, json):
-        self.languages = json.get('supportedDevices', None)
+        self.supported_devices = json.get('supportedDevices', None)
 
     def _set_avg_rating(self, json):
 
