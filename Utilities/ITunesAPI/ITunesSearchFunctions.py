@@ -22,5 +22,6 @@ def siri_app_itunes(query,pages):
         app.url=software.get_url()
         app.languages=software.get_languages()
         app.supported_devices=software.get_supported_devices()
+        app.genre=software.get_genres()
         storeApps.append(app)
     return storeApps

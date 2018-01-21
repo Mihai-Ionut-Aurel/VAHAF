@@ -13,6 +13,7 @@ class StoreAppData:
         self.__ratings_curr_ver = 0
         self.__languages = None
         self.__supported_devices = None
+        self.__genre= None
 
     # Properties
     @property
@@ -86,6 +87,14 @@ class StoreAppData:
     @supported_devices.setter
     def supported_devices(self, val):
         self.__supported_devices = val
+
+    @property
+    def genre(self):
+        return self.__genre
+
+    @genre.setter
+    def genre(self, val):
+        self.__genre = val
 
     def __repr__(self):
         return str(self.__dict__)
